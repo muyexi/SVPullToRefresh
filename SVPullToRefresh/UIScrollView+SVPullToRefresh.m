@@ -93,6 +93,11 @@ static char UIScrollViewPullToRefreshView;
     
 }
 
+- (void)addLeftPullToRefreshWithActionHandler:(void (^)(void))actionHandler {
+    [self addPullToRefreshWithActionHandler:actionHandler position:SVPullToRefreshPositionTop];
+    self.pullToRefreshView.isShowLeft = YES;
+}
+
 - (void)addPullToRefreshWithActionHandler:(void (^)(void))actionHandler {
     [self addPullToRefreshWithActionHandler:actionHandler position:SVPullToRefreshPositionTop];
 }
@@ -300,7 +305,7 @@ static char UIScrollViewPullToRefreshView;
         }
         
         CGFloat labelX = (self.bounds.size.width / 2) - (totalMaxWidth / 2) + leftViewWidth + margin;
-        
+        if(self.isShowLeft) self.titleLabel.hidden = YES;
         if(subtitleSize.height > 0){
             CGFloat totalHeight = titleSize.height + subtitleSize.height + marginY;
             CGFloat minY = (self.bounds.size.height / 2)  - (totalHeight / 2);
@@ -318,6 +323,7 @@ static char UIScrollViewPullToRefreshView;
         }
         
         CGFloat arrowX = (self.bounds.size.width / 2) - (totalMaxWidth / 2) + (leftViewWidth - self.arrow.bounds.size.width) / 2;
+        if(self.isShowLeft) arrowX = arrowX / 2;
         self.arrow.frame = CGRectMake(arrowX,
                                       (self.bounds.size.height / 2) - (self.arrow.bounds.size.height / 2),
                                       self.arrow.bounds.size.width,
