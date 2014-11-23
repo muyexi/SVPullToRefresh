@@ -21,7 +21,7 @@
 		22E0D94B1545F63300BB6BB5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 22E0D94A1545F63300BB6BB5 /* README.md */; };
 		22FDEC971639082E00DB53A8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FDEC961639082E00DB53A8 /* Default-568h@2x.png */; };
 		22FDEC9D16390CC800DB53A8 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 2288146016047C06005C6461 /* UIScrollView+SVInfiniteScrolling.m */; };
-		8D465E641A21BF8400C5C1C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D465E631A21BF8400C5C1C1 /* Images.xcassets */; };
+		8D6539121A21FFAD00D704E2 /* icon_load_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D6539111A21FFAD00D704E2 /* icon_load_arrow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +47,7 @@
 		22E0D9401545EE9000BB6BB5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		22E0D94A1545F63300BB6BB5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		22FDEC961639082E00DB53A8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
-		8D465E631A21BF8400C5C1C1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8D6539111A21FFAD00D704E2 /* icon_load_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_load_arrow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +125,7 @@
 		22E0D9391545EE7600BB6BB5 /* SVPullToRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				8D465E631A21BF8400C5C1C1 /* Images.xcassets */,
+				8D6539111A21FFAD00D704E2 /* icon_load_arrow.png */,
 				226989041639F55E00FCBB3B /* SVPullToRefresh.h */,
 				22E0D93A1545EE7600BB6BB5 /* UIScrollView+SVPullToRefresh.h */,
 				22E0D93B1545EE7600BB6BB5 /* UIScrollView+SVPullToRefresh.m */,
@@ -191,8 +191,8 @@
 				22E0D9231545EE5B00BB6BB5 /* InfoPlist.strings in Resources */,
 				22E0D92F1545EE5B00BB6BB5 /* SVViewController.xib in Resources */,
 				22E0D94B1545F63300BB6BB5 /* README.md in Resources */,
-				8D465E641A21BF8400C5C1C1 /* Images.xcassets in Resources */,
 				22FDEC971639082E00DB53A8 /* Default-568h@2x.png in Resources */,
+				8D6539121A21FFAD00D704E2 /* icon_load_arrow.png in Resources */,
 				2214365616B48FD70057C96E /* SVPullToRefresh.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
