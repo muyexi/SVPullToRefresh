@@ -323,7 +323,7 @@ static char UIScrollViewPullToRefreshView;
         }
         
         CGFloat arrowX = (self.bounds.size.width / 2) - (totalMaxWidth / 2) + (leftViewWidth - self.arrow.bounds.size.width) / 2;
-        if(self.isShowLeft) arrowX = arrowX / 2;
+        if(self.isShowLeft) arrowX = 8;
         self.arrow.frame = CGRectMake(arrowX,
                                       (self.bounds.size.height / 2) - (self.arrow.bounds.size.height / 2),
                                       self.arrow.bounds.size.width,
