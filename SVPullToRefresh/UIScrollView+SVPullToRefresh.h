@@ -21,8 +21,8 @@ typedef NS_ENUM(NSUInteger, SVPullToRefreshPosition) {
 };
 
 typedef NS_ENUM(NSUInteger, SVPullToRefreshHorizontalPosition) {
-    SVPullToRefreshHorizontalPositionLeft,
-    SVPullToRefreshHorizontalPositionCenter
+    SVPullToRefreshHorizontalPositionCenter,
+    SVPullToRefreshHorizontalPositionLeft
 };
 
 - (void)addPullToRefreshWithActionHandler:(void (^)(void))actionHandler;
