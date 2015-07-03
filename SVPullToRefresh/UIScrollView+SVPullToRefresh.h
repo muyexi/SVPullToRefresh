@@ -20,7 +20,11 @@ typedef NS_ENUM(NSUInteger, SVPullToRefreshPosition) {
     SVPullToRefreshPositionBottom,
 };
 
-- (void)addLeftPullToRefreshWithActionHandler:(void (^)(void))actionHandler;
+typedef NS_ENUM(NSUInteger, SVPullToRefreshHorizontalPosition) {
+    SVPullToRefreshHorizontalPositionLeft,
+    SVPullToRefreshHorizontalPositionCenter
+};
+
 - (void)addPullToRefreshWithActionHandler:(void (^)(void))actionHandler;
 - (void)addPullToRefreshWithActionHandler:(void (^)(void))actionHandler position:(SVPullToRefreshPosition)position;
 - (void)triggerPullToRefresh;
@@ -40,6 +44,7 @@ typedef NS_ENUM(NSUInteger, SVPullToRefreshState) {
 
 @interface SVPullToRefreshView : UIView
 
+@property (nonatomic, assign) SVPullToRefreshHorizontalPosition horizontalPosition;
 @property (nonatomic, assign) BOOL isShowLeft;
 @property (nonatomic, strong) UIColor *arrowColor;
 @property (nonatomic, strong) UIColor *textColor;

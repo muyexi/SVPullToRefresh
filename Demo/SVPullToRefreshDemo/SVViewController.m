@@ -25,7 +25,8 @@
     __weak SVViewController *weakSelf = self;
     
     // setup pull-to-refresh
-    [self.tableView addLeftPullToRefreshWithActionHandler:^{
+    self.tableView.pullToRefreshView.horizontalPosition = SVPullToRefreshHorizontalPositionLeft;
+    [self.tableView addPullToRefreshWithActionHandler:^{
         [weakSelf insertRowAtTop];
     }];
         
